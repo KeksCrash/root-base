@@ -1,0 +1,13 @@
+Package: procps-ng-pkill
+Version: 3.3.15-2
+Depends: libc, procps-ng
+Alternatives: 200:/usr/bin/pkill:/usr/bin/procps-ng-pkill
+Source: feeds/packages/utils/procps-ng
+SourceName: procps-ng-pkill
+License: GPL-2.0
+LicenseFiles: COPYING COPYING.LIB
+Section: utils
+Maintainer: Gergely Kiss <mail.gery@gmail.com>
+Architecture: mips_24kc
+Installed-Size: 7252
+Description:  Installs the applet pkill.

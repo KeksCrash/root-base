@@ -1,0 +1,13 @@
+Package: openssh-client
+Version: 8.0p1-1
+Depends: libc, libopenssl1.1, zlib
+Alternatives: 200:/usr/bin/ssh:/usr/bin/openssh-ssh, 200:/usr/bin/scp:/usr/bin/openssh-scp
+Source: feeds/packages/net/openssh
+SourceName: openssh-client
+License: BSD ISC
+LicenseFiles: LICENCE
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mips_24kc
+Installed-Size: 313851
+Description:  OpenSSH client.

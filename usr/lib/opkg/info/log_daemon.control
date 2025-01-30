@@ -1,0 +1,9 @@
+Package: log_daemon
+Version: 1
+Depends: libc
+Source: extra_feeds/hak5/utils/log_daemon
+SourceName: log_daemon
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 3551
+Description:  Daemon to log probes and associations

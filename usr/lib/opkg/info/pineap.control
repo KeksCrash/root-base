@@ -1,0 +1,9 @@
+Package: pineap
+Version: 3
+Depends: libc, libpthread, libstdcpp6, libpcap1, libsqlite3-0, libwifi
+Source: extra_feeds/hak5/network/pineap
+SourceName: pineap
+Section: net
+Architecture: mips_24kc
+Installed-Size: 79218
+Description:  WiFi Pineapple PineAP.

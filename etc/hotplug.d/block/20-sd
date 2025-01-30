@@ -1,0 +1,49 @@
+#!/bin/bash
+
+if [[ $(cat /proc/cpuinfo | grep 'machine' | awk {'print $6'}) != "NANO" ]]; then
+    exit 0
+fi
+
+busDev=$(echo $DEVPATH | awk -F "/" '{print $6"/"$7}')
+idProduct=$(cat /sys/bus/usb/devices/$busDev/idProduct)
+idVendor=$(cat /sys/bus/usb/devices/$busDev/idVendor)
+device=`basename $DEVPATH`
+
+[[ $idVendor == "05e3" && $idProduct == "0745" ]] && {
+    [[ -f /tmp/sd_action ]] && {
+        action=$(cat /tmp/sd_action)
+        mkdir -p /dev/sdcard
+        mkdir -p /sd
+        [[ $action == "remove" ]] && {
+            devNum=$(echo $device | awk -F "" '{print $4}')
+            [[ $devNum == "" ]] && {
+                rm -rf /dev/sdcard/sd
+                ln -s /dev/$device /dev/sdcard/sd
+            } || {
+                rm -rf /dev/sdcard/sd$devNum
+                ln -s /dev/$device /dev/sdcard/sd$devNum
+
+                [[ $devNum == "1" ]] && {
+                    umount /sd
+                    mount /dev/sdcard/sd$devNum /sd && {
+                        [[ -e "/sd/etc" ]] || {
+                            sleep 5
+                            ln -s /etc/ /sd/etc
+                        }
+                    }
+                    if [[ -e /sd/modules/ ]]; then
+                        for module in `ls /sd/modules/`; do
+                            ln -s /sd/modules/$module /pineapple/modules/$module
+                        done
+                    fi
+                }
+
+                 [[ $devNum == "2" ]] && {
+                     swapoff /dev/sdcard/sd$devNum
+                     swapon /dev/sdcard/sd$devNum
+                 }
+            }
+
+        }
+    }
+}

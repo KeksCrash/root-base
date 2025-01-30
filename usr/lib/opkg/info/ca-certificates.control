@@ -1,0 +1,10 @@
+Package: ca-certificates
+Version: 20190110-2
+Depends: libc
+Provides: ca-certs
+Source: package/system/ca-certificates
+SourceName: ca-certificates
+Section: base
+Architecture: all
+Installed-Size: 124934
+Description:  System CA certificates

@@ -1,0 +1,10 @@
+Package: kmod-rtl8187
+Version: 4.14.171+4.19.98-1-1
+Depends: kernel (=4.14.171-1-33581e7eab511eb3404e9c139a4012f9), kmod-eeprom-93cx6, kmod-mac80211, kmod-usb-core
+Source: package/kernel/mac80211
+SourceName: kmod-rtl8187
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 17537
+Description:  Realtek Drivers for RTL818x devices (RTL8187 USB)

@@ -1,0 +1,10 @@
+Package: base-files
+Version: 204.2-r10947-65030d81f3
+Depends: libc, netifd, procd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
+Source: package/base-files
+SourceName: base-files
+License: GPL-2.0
+Section: base
+Architecture: mips_24kc
+Installed-Size: 73461
+Description:  This package contains a base filesystem and system scripts for OpenWrt.

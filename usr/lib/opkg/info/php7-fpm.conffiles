@@ -1,0 +1,3 @@
+/etc/php7-fpm.conf
+/etc/php7-fpm.d/www.conf
+/etc/config/php7-fpm

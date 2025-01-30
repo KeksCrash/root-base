@@ -1,0 +1,10 @@
+Package: kmod-scsi-core
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-33581e7eab511eb3404e9c139a4012f9)
+Source: package/kernel/linux
+SourceName: kmod-scsi-core
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 80839
+Description:  SCSI device support

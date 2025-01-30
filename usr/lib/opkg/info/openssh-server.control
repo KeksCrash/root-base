@@ -1,0 +1,13 @@
+Package: openssh-server
+Version: 8.0p1-1
+Depends: libc, libopenssl1.1, zlib, openssh-keygen
+Source: feeds/packages/net/openssh
+SourceName: openssh-server
+License: BSD ISC
+LicenseFiles: LICENCE
+Section: net
+Require-User: sshd=22:sshd=22
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mips_24kc
+Installed-Size: 290534
+Description:  OpenSSH server.

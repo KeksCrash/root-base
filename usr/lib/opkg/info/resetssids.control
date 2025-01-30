@@ -1,0 +1,9 @@
+Package: resetssids
+Version: 1
+Depends: libc, libsqlite3-0
+Source: package/utils/resetssids
+SourceName: resetssids
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 1805
+Description:  Tool to mark SSIDs as old on the WiFi Pineapple

@@ -1,0 +1,10 @@
+Package: kmod-usb-serial-pl2303
+Version: 4.14.171-1
+Depends: kernel (=4.14.171-1-33581e7eab511eb3404e9c139a4012f9), kmod-usb-serial
+Source: package/kernel/linux
+SourceName: kmod-usb-serial-pl2303
+License: GPL-2.0
+Section: kernel
+Architecture: mips_24kc
+Installed-Size: 5054
+Description:  Kernel support for Prolific PL2303 USB-to-Serial converters

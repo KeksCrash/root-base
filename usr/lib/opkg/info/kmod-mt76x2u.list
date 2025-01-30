@@ -1,0 +1,4 @@
+/lib/firmware/mediatek/mt7662u_rom_patch.bin
+/lib/firmware/mediatek/mt7662u.bin
+/lib/modules/4.14.171/mt76x2u.ko
+/etc/modules.d/31-mt76x2u

@@ -1,0 +1,10 @@
+Package: kernel
+Version: 4.14.171-1-33581e7eab511eb3404e9c139a4012f9
+Depends: libc
+Source: package/kernel/linux
+SourceName: kernel
+License: GPL-2.0
+Section: sys
+Architecture: mips_24kc
+Installed-Size: 105
+Description:  Virtual kernel package

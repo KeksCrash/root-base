@@ -1,0 +1,10 @@
+Package: kmod-rtlwifi
+Version: 4.14.171+4.19.98-1-1
+Depends: kernel (=4.14.171-1-33581e7eab511eb3404e9c139a4012f9), kmod-mac80211
+Source: package/kernel/mac80211
+SourceName: kmod-rtlwifi
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 33268
+Description:  Realtek common driver part

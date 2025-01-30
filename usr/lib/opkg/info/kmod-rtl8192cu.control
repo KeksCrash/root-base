@@ -1,0 +1,10 @@
+Package: kmod-rtl8192cu
+Version: 4.14.171+4.19.98-1-1
+Depends: kernel (=4.14.171-1-33581e7eab511eb3404e9c139a4012f9), kmod-rtlwifi-usb, kmod-rtl8192c-common, rtl8192cu-firmware
+Source: package/kernel/mac80211
+SourceName: kmod-rtl8192cu
+Section: kernel
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mips_24kc
+Installed-Size: 27392
+Description:  Realtek RTL8192CU/RTL8188CU support

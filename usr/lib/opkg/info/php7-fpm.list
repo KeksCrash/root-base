@@ -1,0 +1,6 @@
+/lib/upgrade/keep.d/php7-fpm
+/etc/php7-fpm.conf
+/usr/bin/php-fpm
+/etc/php7-fpm.d/www.conf
+/etc/init.d/php7-fpm
+/etc/config/php7-fpm

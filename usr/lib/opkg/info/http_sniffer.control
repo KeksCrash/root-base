@@ -1,0 +1,9 @@
+Package: http_sniffer
+Version: 1
+Depends: libc, libpcap1
+Source: extra_feeds/hak5/network/http_sniffer
+SourceName: http_sniffer
+Section: net
+Architecture: mips_24kc
+Installed-Size: 2584
+Description:  Sniffs outgoing HTTP traffic for DWall.
